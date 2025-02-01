@@ -11,9 +11,6 @@
 /cypress/videos/
 /cypress/screenshots/
 
-# Storybook build
-/storybook-static/
-
 # Vite
 /.vite/
 /dist/
