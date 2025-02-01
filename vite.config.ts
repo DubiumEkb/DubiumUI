@@ -3,6 +3,7 @@ import { resolve } from "path"
 import { defineConfig } from "vitest/config"
 
 export default defineConfig({
+	base: "/DubiumUI", // Указываем базовый путь для GitHub Pages
 	plugins: [react()],
 	build: {
 		lib: {

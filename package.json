@@ -3,6 +3,7 @@
 	"private": false,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://dubiumekb.github.io/DubiumUI",
 	"scripts": {
 		"clean:coverage": "rimraf coverage",
 		"clean:build": "rimraf dist",
@@ -18,9 +19,9 @@
 		"test:coverage": "npm run clean:coverage && vitest run --coverage",
 		"storybook:dev": "storybook dev -p 6006",
 		"storybook:build": "npm run clean:docs && storybook build",
+		"storybook:deploy": "gh-pages -d storybook-static",
 		"cypress:open": "cypress open",
-		"cypress:run": "cypress run",
-		"deploy": "gh-pages -d storybook-static"
+		"cypress:run": "cypress run"
 	},
 	"dependencies": {
 		"classnames": "^2.5.1",

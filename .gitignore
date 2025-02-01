@@ -27,12 +27,6 @@
 # TypeScript
 *.tsbuildinfo
 
-# npm package
-package-lock.json
-
-# Yarn lock
-yarn.lock
-
 # Environment variables
 .env
 .env.local
