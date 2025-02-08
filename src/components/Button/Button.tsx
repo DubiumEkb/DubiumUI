@@ -1,4 +1,3 @@
-import React from "react"
 import classNames from "classnames"
 
 interface ButtonProps {
@@ -16,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({ children, onClick, disabled = fa
 	})
 
 	return (
-		<button className={buttonClasses} onClick={onClick} disabled={disabled}>
+		<button className={buttonClasses} style={{ fontSize: "2em" }} onClick={onClick} disabled={disabled}>
 			{children}
 		</button>
 	)

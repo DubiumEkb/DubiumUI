@@ -1,4 +1,4 @@
-# Описание UIKit - @Dubium_ui
+# @Dubium_ui
 
 ## Про тесты проекта
 

@@ -1,10 +1,19 @@
 import react from "@vitejs/plugin-react-swc"
 import { resolve } from "path"
+import { ghPages } from "vite-plugin-gh-pages"
 import { defineConfig } from "vitest/config"
 
 export default defineConfig({
-	base: "/DubiumUI", // Указываем базовый путь для GitHub Pages
-	plugins: [react()],
+	base: "/DubiumUI/",
+	plugins: [
+		react(),
+		ghPages({
+			onError: (error: any) => {
+				console.error("Deployment failed:", error)
+				process.exit(1)
+			},
+		}),
+	],
 	build: {
 		lib: {
 			entry: resolve(__dirname, "src/components/index.ts"),

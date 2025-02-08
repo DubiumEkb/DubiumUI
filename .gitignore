@@ -28,3 +28,7 @@
 .env
 .env.local
 .env.*.local
+
+.storybook/cache
+
+/storybook-static
