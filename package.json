@@ -1,7 +1,7 @@
 {
 	"name": "@dubium/ui",
 	"private": false,
-	"version": "v0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"homepage": "https://dubiumekb.github.io/DubiumUI/",
 	"main": "dist/dubium_ui.js",
