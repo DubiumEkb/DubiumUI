@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react"
 import { Button } from "./Button"
 import { describe, expect, it } from "vitest"
+import "@testing-library/jest-dom"
+import React from "react"
 
 describe("Button", () => {
 	it("renders the button with correct text", () => {

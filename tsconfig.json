@@ -1,7 +1,32 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+	"compilerOptions": {
+		// Основные настройки
+		"target": "ESNext", // Современный стандарт JavaScript
+		"module": "ESNext", // Использование ES-модулей
+		"moduleResolution": "Node", // Разрешение модулей как в Node.js
+		"strict": true, // Включение всех строгих проверок TypeScript
+		"jsx": "preserve", // Сохранение JSX для обработки Vite
+		"jsxImportSource": "react", // Указание источника для JSX (React)
+		"esModuleInterop": true, // Упрощение работы с CommonJS модулями
+		"skipLibCheck": true, // Пропуск проверки типов в библиотеках
+		"forceConsistentCasingInFileNames": true, // Единообразие в именах файлов
+
+		// Настройки для генерации .d.ts файлов
+		"declaration": true, // Генерация файлов .d.ts
+		"declarationDir": "dist/types", // Папка для .d.ts файлов
+		"emitDeclarationOnly": false, // Генерация не только .d.ts, но и JS
+
+		// Настройки для сборки
+		"outDir": "dist", // Папка для скомпилированных файлов
+		"rootDir": "src", // Корневая папка с исходным кодом
+		"sourceMap": true, // Генерация source maps для отладки
+
+		// Настройки для поддержки путей (aliases)
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"] // Алиас для импортов
+		}
+	},
+	"include": ["src"], // Включаем папку src для компиляции
+	"exclude": ["**/*.test.ts", "**/*.test.tsx", "node_modules", "dist"] // Исключаем ненужные папки
 }
